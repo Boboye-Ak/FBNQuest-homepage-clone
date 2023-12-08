@@ -1,6 +1,37 @@
 .discover-more-card {
-  background-color: red;
-  height: 100%;
-  width: 20%;
+  height: 50vh;
+  width: 20vw;
   border: solid;
+  border-width: 1px;
+  border-color: rgb(229, 227, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.discover-more-card-image-container {
+  width: 80%;
+  height: 70%;
+  margin-top: 20px;
+  margin-left: 20px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.discover-more-card-image-container.hovered {
+  background-size: 200%;
+}
+
+.discover-more-card-text {
+  margin-left: 20px;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

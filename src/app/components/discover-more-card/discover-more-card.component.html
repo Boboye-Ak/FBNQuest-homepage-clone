@@ -1,1 +1,13 @@
-<div class="discover-more-card">{{cardData.text}}</div>
+<div
+  class="discover-more-card"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+  
+>
+  <div
+    class="discover-more-card-image-container"
+    [ngClass]="{ hovered: isHovered }"
+    [ngStyle]="{ 'background-image': 'url(' + cardData.imageUrl + ')' }"
+  ></div>
+  <div class="discover-more-card-text">{{ cardData.text }}</div>
+</div>

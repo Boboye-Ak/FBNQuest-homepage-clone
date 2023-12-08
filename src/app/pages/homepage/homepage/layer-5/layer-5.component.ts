@@ -15,7 +15,7 @@ export class Layer5Component {
     { text: 'Lifestyle', imageUrl: '../../../../../assets/woman-sitting.jpg' },
     {
       text: 'Ask the Experts',
-      imageUrl: '../../../../../assets/customer-care.jpg',
+      imageUrl: '../../../../../assets/customer-care-rep.jpg',
     },
     {
       text: 'Leading Conversations',
