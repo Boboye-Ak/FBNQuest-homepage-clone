@@ -1,1 +1,10 @@
-<section class="layer-5">layer-5 works!</section>
+<section class="layer-5">
+  <h1>Discover More</h1>
+  <h2>
+    More of the Financial Solutions and market intelligence to can help you make
+    strategic decisions based on fact.
+  </h2>
+  <div class="card-container">
+    <app-discover-more-card *ngFor="let card of cardData" [cardData]="card"></app-discover-more-card>
+  </div>
+</section>

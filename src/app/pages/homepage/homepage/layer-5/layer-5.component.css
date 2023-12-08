@@ -1,5 +1,34 @@
 .layer-5 {
+  font-family: "Inter", sans-serif;
   height: 80vh;
   width: 100vw;
   background-color: red;
+}
+
+.layer-5 h1 {
+  margin-left: 10px;
+  margin-bottom: 12.5px;
+  color: #003b65;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.layer-5 h2 {
+  margin-left: 10px;
+  margin-top: 12.5px;
+  width: 45%;
+  color: #5f7380;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.layer-5 .card-container {
+  margin-top: 50px;
+  background-color: pink;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
