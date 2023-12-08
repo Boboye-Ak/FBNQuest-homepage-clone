@@ -1,0 +1,10 @@
+<div class="share-tag">
+  <div *ngIf="!isHovered">SHARE</div>
+  <div *ngIf="isHovered">SHARE ICONS</div>
+</div>
+<div class="scroll-button-container">
+  <div class="scroll-button">
+    <fa-icon [icon]="faAngleDown" [ngStyle]="{ color: 'white' }"></fa-icon>
+  </div>
+  <div class="scroll-text">SCROLL</div>
+</div>

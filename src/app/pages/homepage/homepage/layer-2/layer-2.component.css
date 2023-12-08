@@ -1,0 +1,91 @@
+.layer-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  padding-top: 20vh;
+  font-family: "Inter", sans-serif;
+}
+
+.layer-2 .whats-trending {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 45%;
+}
+
+.layer-2 .whats-trending .whats-trending-heading {
+  color: #003b65;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+.layer-2 .whats-trending .whats-trending-text {
+  color: #5f7380;
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 18px;
+}
+
+.layer-2 .trends {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+  margin-top: 50px;
+  height: 40%;
+}
+
+.layer-2 .trends .minor-trends {
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.layer-2 .trends .minor-trends a {
+  padding: 20px;
+  text-decoration: none;
+  color: #003b65;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5em;
+  display: block;
+  cursor: pointer;
+}
+
+.layer-2 .trends .minor-trends a:hover {
+  color: #b50256;
+}
+
+.layer-2 .trends .major-trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid;
+  border-color: rgb(220, 220, 220);
+  border-width: 1px;
+  width: 50%;
+  margin-right: 20px;
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.layer-2 .trends .major-trend p {
+  margin-left: 0;
+  color: #5f7380;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+.layer-2 .trends .major-trend a {
+  margin-left: 0;
+  color: #003b65;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Inter", Sans-serif;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+
+.layer-2 .trends .major-trend a:hover {
+  color: #b50256;
+}

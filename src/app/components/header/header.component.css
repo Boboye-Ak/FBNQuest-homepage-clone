@@ -1,0 +1,103 @@
+.header {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  border-bottom: solid white 1px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.header.not-at-top{
+  background-color: white;
+  color: #0e234a;
+}
+
+.header:hover {
+  background-color: white;
+  color: #0e234a;
+}
+
+.header .header-layer-1 {
+  height: 30%;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 0;
+}
+.header .header-layer-1 .left {
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header .header-layer-1 .left li {
+}
+
+.header .header-layer-1 .right {
+  width: 14%;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.header .header-layer-1 .right li {
+  cursor: pointer;
+}
+.header .header-layer-1 .right li:hover {
+  color: purple;
+}
+
+.header .header-layer-2 {
+  height: 70%;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-layer-2 ul {
+  margin-left: 10px;
+  width: 50%;
+  max-height: 10px;
+  justify-content: space-between;
+}
+
+.header .header-layer-2 .fbnquest-logo {
+  margin-right: 30px;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-layer-2 .fbnquest-logo img {
+  height: 50%;
+  width: 100%;
+  color: white;
+}

@@ -1,0 +1,81 @@
+<header class="header" [ngClass]="{ 'not-at-top': !isAtTop }">
+  <section class="header-layer-1">
+    <ul class="left">
+      <li class="purple">HOME</li>
+      <app-header-menu-item
+        title="WHO WE SERVE"
+        [menuItems]="[
+          { name: 'INDIVIDUALS', link: '' },
+          { name: 'INSTITUTIONS', link: '' },
+          { name: 'BECOME A CLIENT', link: '' }
+        ]"
+      ></app-header-menu-item>
+      <app-header-menu-item
+        title="OUR SOLUTIONS"
+        [menuItems]="[
+          { name: 'INVESTMENT MANAGEMENT', link: '' },
+          { name: 'CORPORATE AND INVESTMENT BANKING', link: '' },
+          { name: 'INSTITUTIONAL SECURITIES', link: '' }
+        ]"
+      ></app-header-menu-item>
+    </ul>
+    <ul class="right">
+      <li>SEARCH</li>
+      <li>CAREERS</li>
+    </ul>
+  </section>
+  <section class="header-layer-2">
+    <ul>
+      <app-header-menu-item
+        title="About"
+        [menuItems]="[
+          { name: 'Our Company', link: '' },
+          { name: 'Milestones', link: '' },
+          { name: 'Governance', link: '' },
+          { name: 'Investor Relations', link: '' }
+        ]"
+      ></app-header-menu-item>
+      <app-header-menu-item
+        title="Businesses"
+        [menuItems]="[
+          { name: 'FBNQuest Merchant Bank Group', link: '' },
+          { name: 'FBNQuest Capital Group', link: '' },
+          { name: 'FBNQuest Trustees', link: '' }
+        ]"
+      ></app-header-menu-item>
+      <app-header-menu-item
+        title="Sustainability"
+        [menuItems]="[
+          { name: 'Where we stand', link: '' },
+          { name: 'Committed to Stewardship', link: '' },
+          { name: 'Citizenship Reports', link: '' }
+        ]"
+      ></app-header-menu-item>
+      <app-header-menu-item
+        title="Pressroom"
+        [menuItems]="[
+          { name: 'News and Press Releases', link: '' },
+          { name: 'Lifestyle', link: '' },
+          { name: 'Leading Conversations', link: '' },
+          { name: 'Impact Stories', link: '' },
+          { name: 'Awards', link: '' }
+        ]"
+      ></app-header-menu-item>
+      <app-header-menu-item
+        title="Quicklinks"
+        [menuItems]="[
+          { name: 'Help & Support', link: '' },
+          { name: 'Tools & Calculators', link: '' },
+          { name: 'Office Locations', link: '' },
+          { name: 'FAQs', link: '' },
+          { name: 'Policies', link: '' },
+          { name: 'Ask the Experts', link: '' },
+          { name: 'NCCG Reports', link: '' }
+        ]"
+      ></app-header-menu-item>
+    </ul>
+    <div class="fbnquest-logo">
+      <img src="../../../assets/FBN-Quest.svg" />
+    </div>
+  </section>
+</header>

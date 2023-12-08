@@ -1,0 +1,20 @@
+<section class="layer-2">
+  <div class="whats-trending">
+    <h1 class="whats-trending-heading">See What's Trending</h1>
+    <h2 class="whats-trending-text">
+      Learn more about the latest economic issues, gain market insights and
+      discover some of the trends shaping the world today.
+    </h2>
+  </div>
+  <div class="trends">
+    <div class="minor-trends">
+      <a *ngFor="let trend of trends">{{ trend.snippet }}</a>
+    </div>
+    <div class="major-trend">
+      <a>{{ featureTrend.headline }}</a>
+      <p>
+        {{ featureTrend.snippet }}
+      </p>
+    </div>
+  </div>
+</section>
