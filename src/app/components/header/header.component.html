@@ -79,10 +79,33 @@
     </div>
   </section>
 </header>
-
-
-
-
-
-
-<header class="mobile-header"></header>
+<!--####################################################################-->
+<header class="mobile-header">
+  <ul class="header-layer-1">
+    <li>HOME</li>
+    <li>CLIENTS</li>
+    <li>SOLUTIONS</li>
+    <li>CAREERS</li>
+    <app-header-menu-item
+      title="LOGIN"
+      [menuItems]="[
+        { name: 'FBNQUEST MERCHANT BANK - INDIVIDUAL', link: '' },
+        { name: 'FBNQUEST MERCHANT BANK - CORPORATE', link: '' },
+        { name: 'FBNQUEST ASSET MANAGEMENT', link: '' },
+        { name: 'FBNQUEST SECURITIES', link: '' },
+        { name: 'FBNQUEST TRUSTEES', link: '' }
+      ]"
+    ></app-header-menu-item>
+  </ul>
+  <div class="header-layer-2">
+    <fa-icon
+      [icon]="showAdditionalMenu ? faTimes : faBars"
+      class="menu-icon"
+      (click)="toggleShowAdditionalMenu()"
+    ></fa-icon>
+    <div class="fbnquest-logo">
+      <img src="../../../assets/FBN-Quest.svg" />
+    </div>
+  </div>
+  <app-additional-menu *ngIf="showAdditionalMenu"></app-additional-menu>
+</header>
