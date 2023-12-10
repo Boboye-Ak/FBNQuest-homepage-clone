@@ -35,3 +35,10 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-width: 767px) {
+  .discover-more-card {
+    margin-top: 15px;
+    width: 80vw;
+  }
+}

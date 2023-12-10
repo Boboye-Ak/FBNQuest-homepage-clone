@@ -115,3 +115,42 @@
   font-size: 11px;
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  .layer-6 {
+    height: auto;
+    width: 100%;
+    background-color: #003b65;
+  }
+  .layer-6 .layer-6-top {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .layer-6 .layer-6-middle {
+    justify-content: space-between;
+    height: 70vh;
+  }
+  .layer-6 .layer-6-middle:first-child {
+    align-self: center;
+  }
+  .layer-6 .layer-6-middle ul li {
+    font-size: 9px;
+    color: white;
+  }
+  .layer-6 .layer-6-bottom {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .layer-6 .layer-6-bottom p {
+    width: 100%;
+    text-align: center;
+  }
+  .layer-6 .layer-6-bottom ul {
+    width: 70%;
+  }
+}
