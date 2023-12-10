@@ -22,7 +22,6 @@
 }
 
 .layer-3 .layer-3-content-box h1 {
-    margin-top: 0;
   color: #003b65;
   font-family: "Inter", sans-serif;
   font-size: 40px;
@@ -68,4 +67,21 @@
   color: #b50256;
   font-size: 0.9em;
   margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .layer-3 {
+    height: 50vh;
+  }
+  .layer-3 .layer-3-content-box {
+    width: 70%;
+    height: 60%;
+  }
+  .layer-3 .layer-3-content-box h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .layer-3 .layer-3-content-box h2 {
+    font-size: 14px;
+  }
 }

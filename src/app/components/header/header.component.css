@@ -113,7 +113,7 @@
 
   .mobile-header {
     position: sticky;
-    top: -10vh;
+    top: 0;
     z-index: 5;
     display: block;
     height: 15vh;
@@ -147,6 +147,7 @@
   }
 
   .mobile-header .header-layer-2 .menu-icon {
+    font-size: 20px;
     margin-left: 10px;
   }
 
