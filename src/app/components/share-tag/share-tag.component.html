@@ -3,7 +3,7 @@
   <div *ngIf="isHovered">SHARE ICONS</div>
 </div>
 <div class="scroll-button-container">
-  <div class="scroll-button">
+  <div class="scroll-button" (click)="(scrollDown())">
     <fa-icon [icon]="faAngleDown" [ngStyle]="{ color: 'white' }"></fa-icon>
   </div>
   <div class="scroll-text">SCROLL</div>

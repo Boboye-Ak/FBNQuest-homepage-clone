@@ -8,3 +8,8 @@ body {
 .purple {
   color: purple;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

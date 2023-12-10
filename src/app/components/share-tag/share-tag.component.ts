@@ -11,7 +11,19 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './share-tag.component.css',
 })
 export class ShareTagComponent implements OnInit {
-  faAngleDown=faAngleDown
+  faAngleDown = faAngleDown;
   isHovered: boolean = false;
+
+
+  scrollDown() {
+    window.scroll({
+      top: window.innerHeight, // Scroll down by the height of the viewport
+      behavior: 'smooth', // Add smooth scroll behavior
+    });
+  }
+
+  constructor(){
+    
+  }
   ngOnInit(): void {}
 }
