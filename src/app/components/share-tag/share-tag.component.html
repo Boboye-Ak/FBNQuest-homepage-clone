@@ -1,9 +1,20 @@
-<div class="share-tag">
+<div
+  class="share-tag"
+  (mouseenter)="isHovered = true"
+  (mouseleave)="isHovered = false"
+>
   <div *ngIf="!isHovered">SHARE</div>
-  <div *ngIf="isHovered">SHARE ICONS</div>
+  <div *ngIf="isHovered" class="icons">
+    <fa-icon [icon]="faFacebook" [rotate]="90" class="icon"></fa-icon>
+    <fa-icon [icon]="faTwitter" [rotate]="90" class="icon"></fa-icon>
+    <fa-icon [icon]="faLinkedin" [rotate]="90" class="icon"></fa-icon>
+    <fa-icon [icon]="faWhatsapp" [rotate]="90" class="icon"></fa-icon>
+  </div>
 </div>
+
+<!---------------------------------------------------------------------->
 <div class="scroll-button-container">
-  <div class="scroll-button" (click)="(scrollDown())">
+  <div class="scroll-button" (click)="scrollDown()">
     <fa-icon [icon]="faAngleDown" [ngStyle]="{ color: 'white' }"></fa-icon>
   </div>
   <div class="scroll-text">SCROLL</div>

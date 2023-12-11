@@ -2,6 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-share-tag',
@@ -14,6 +20,10 @@ export class ShareTagComponent implements OnInit {
   faAngleDown = faAngleDown;
   isHovered: boolean = false;
 
+  faFacebook=faFacebook
+  faTwitter=faTwitter
+  faLinkedin=faLinkedin
+  faWhatsapp=faWhatsapp
 
   scrollDown() {
     window.scroll({
@@ -22,8 +32,6 @@ export class ShareTagComponent implements OnInit {
     });
   }
 
-  constructor(){
-    
-  }
+  constructor() {}
   ngOnInit(): void {}
 }
