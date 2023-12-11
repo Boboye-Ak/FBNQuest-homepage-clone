@@ -1,5 +1,10 @@
-<li class="dropdown-menu-title" (mouseenter)="onMouseOver()" (mouseleave)="onMouseOut()" (click)="toggleShow()">
-  {{ title }} <fa-icon [icon]="faAngleDown"></fa-icon>
+<li
+  class="dropdown-menu-title"
+  (mouseenter)="onMouseOver()"
+  (mouseleave)="onMouseOut()"
+  (click)="toggleShow()"
+>
+  {{ title }} <fa-icon [icon]="faAngleDown" class="dropdown-menu-icon"></fa-icon>
   <ul class="dropdown-menu" *ngIf="showDropDown">
     <li *ngFor="let menuItem of menuItems">{{ menuItem.name }}</li>
   </ul>

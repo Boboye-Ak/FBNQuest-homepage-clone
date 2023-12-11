@@ -7,7 +7,7 @@
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   height: 20vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,7 +64,7 @@
 .header .header-layer-1 .right {
   width: 14%;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .header .header-layer-1 .right li {
@@ -93,7 +93,7 @@
 }
 
 .header .header-layer-2 .fbnquest-logo {
-  margin-right: 30px;
+  margin-right: 20px;
   height: 100%;
   width: 15%;
   display: flex;
@@ -117,7 +117,7 @@
     z-index: 5;
     display: block;
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     background-color: white;
   }
   .mobile-header .header-layer-1 {

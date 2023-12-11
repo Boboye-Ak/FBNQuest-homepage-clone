@@ -2,6 +2,10 @@
   background-color: blue;
   max-height: 15px;
 }
+.dropdown-menu-icon {
+  margin-left: 5px;
+  
+}
 
 .dropdown-menu-title:hover {
   color: purple;
@@ -29,6 +33,9 @@
   height: 50px;
   transition: 0.2s;
   padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .dropdown-menu li:hover {
   background-color: rgb(231, 229, 230);

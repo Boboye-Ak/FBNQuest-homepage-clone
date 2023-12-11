@@ -20,10 +20,12 @@ export class ShareTagComponent implements OnInit {
   faAngleDown = faAngleDown;
   isHovered: boolean = false;
 
-  faFacebook=faFacebook
-  faTwitter=faTwitter
-  faLinkedin=faLinkedin
-  faWhatsapp=faWhatsapp
+  faFacebook = faFacebook;
+  faTwitter = faTwitter;
+  faLinkedin = faLinkedin;
+  faWhatsapp = faWhatsapp;
+  
+  icons=[faFacebook, faTwitter, faLinkedin, faWhatsapp]
 
   scrollDown() {
     window.scroll({

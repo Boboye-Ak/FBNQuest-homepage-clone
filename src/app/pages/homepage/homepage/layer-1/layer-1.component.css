@@ -3,7 +3,7 @@
   background-color: blue;
   /* Full height */
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   /* Center and scale the image nicely */
   background-position: center;
