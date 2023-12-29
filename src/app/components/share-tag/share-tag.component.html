@@ -3,16 +3,15 @@
   (mouseenter)="isHovered = true"
   (mouseleave)="isHovered = false"
 >
-  <div *ngIf="!isHovered">SHARE</div>
-  <div *ngIf="isHovered" class="icons">
-    <fa-icon
-      *ngFor="let icon of icons"
-      [icon]="icon"
-      [rotate]="90"
-      class="icon"
-    ></fa-icon>
-
+  @if (!isHovered) {
+  <div>SHARE</div>
+  }@else {
+  <div class="icons">
+    @for (icon of icons; track $index) {
+    <fa-icon [icon]="icon" [rotate]="90" class="icon"></fa-icon>
+    }
   </div>
+  }
 </div>
 
 <!---------------------------------------------------------------------->

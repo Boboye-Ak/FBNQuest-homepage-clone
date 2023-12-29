@@ -10,5 +10,5 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './layer-3.component.css',
 })
 export class Layer3Component {
-  faAngleRight=faAngleRight
+  faAngleRight = faAngleRight;
 }

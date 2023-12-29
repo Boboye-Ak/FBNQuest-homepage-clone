@@ -30,7 +30,7 @@ export class HeaderMenuItemComponent implements OnInit {
       this.showDropDown = false;
     }, 100);
   }
-  toggleShow(){
-    this.showDropDown=!this.showDropDown
+  toggleShow() {
+    this.showDropDown = !this.showDropDown;
   }
 }

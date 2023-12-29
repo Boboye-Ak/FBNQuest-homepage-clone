@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import Layer1Data from '../../../../interfaces/Layer1Data';
 
 @Component({
   selector: 'app-layer-1',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './layer-1.component.css',
 })
 export class Layer1Component implements OnInit {
-  layer1Data = [
+  layer1Data: Layer1Data[] = [
     {
       text: 'Opportunities for Stronger Portfolio Diversification',
       imageUrl: '../../../../../assets/city-buildings.jpg',
@@ -48,8 +49,8 @@ export class Layer1Component implements OnInit {
     }, 5000);
   }
 
-  onBarClick(index:number){
-    this.currentDataIndex=index
+  onBarClick(index: number) {
+    this.currentDataIndex = index;
   }
 
   ngOnInit(): void {

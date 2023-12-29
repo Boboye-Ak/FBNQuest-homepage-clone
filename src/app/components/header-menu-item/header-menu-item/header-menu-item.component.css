@@ -1,10 +1,11 @@
+@import "primeicons/primeicons.css";
+
 .dropdown-menu-container {
   background-color: blue;
   max-height: 15px;
 }
 .dropdown-menu-icon {
   margin-left: 5px;
-  
 }
 
 .dropdown-menu-title:hover {

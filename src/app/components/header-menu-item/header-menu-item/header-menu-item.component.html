@@ -4,8 +4,13 @@
   (mouseleave)="onMouseOut()"
   (click)="toggleShow()"
 >
-  {{ title }} <fa-icon [icon]="faAngleDown" class="dropdown-menu-icon"></fa-icon>
-  <ul class="dropdown-menu" *ngIf="showDropDown">
-    <li *ngFor="let menuItem of menuItems">{{ menuItem.name }}</li>
+  {{ title }}
+  <span class="pi pi-angle-down dropdown-menu-icon"></span>
+  @if(showDropDown){
+  <ul class="dropdown-menu">
+    @for (menuItem of menuItems; track $index) {
+    <li>{{ menuItem.name }}</li>
+    }
   </ul>
+  }
 </li>

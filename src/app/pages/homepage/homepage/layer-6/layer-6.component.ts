@@ -17,9 +17,10 @@ import {
   styleUrl: './layer-6.component.css',
 })
 export class Layer6Component {
-  faFacebook=faFacebook
-  faTwitter=faTwitter
-  faInstagram=faInstagram
-  faYoutube=faYoutube
-  faLinkedin=faLinkedin
+  faFacebook = faFacebook;
+  faTwitter = faTwitter;
+  faInstagram = faInstagram;
+  faYoutube = faYoutube;
+  faLinkedin = faLinkedin;
+  icons = [faFacebook, faTwitter, faInstagram, faYoutube, faLinkedin];
 }

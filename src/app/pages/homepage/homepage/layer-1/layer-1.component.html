@@ -1,21 +1,26 @@
 <section class="layer-1">
+  @for (currentData of layer1Data; track $index) {
   <div
     class="layer-1-image"
-    *ngFor="let currentData of layer1Data; let i = index"
     [ngStyle]="{
       'background-image': 'url(' + currentData.imageUrl + ')'
     }"
-    [ngClass]="{ visible: i === currentDataIndex }"
+    [ngClass]="{ visible: $index === currentDataIndex }"
     id="top"
   ></div>
+
+  }
+
   <p class="layer-1-text">{{ layer1Data[currentDataIndex].text }}</p>
   <div class="layer-1-button">Read more</div>
   <div class="carousel-control">
+    @for (currentData of layer1Data; track $index) {
     <div
-      (click)="onBarClick(i)"
-      *ngFor="let currentData of layer1Data; let i = index"
+      (click)="onBarClick($index)"
       class="carousel-control-bar"
-      [ngClass]="{ 'in-focus': i === currentDataIndex }"
+      [ngClass]="{ 'in-focus': $index === currentDataIndex }"
     ></div>
+
+    }
   </div>
 </section>

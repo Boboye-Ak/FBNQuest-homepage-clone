@@ -8,7 +8,9 @@
   </div>
   <div class="trends">
     <div class="minor-trends">
-      <a *ngFor="let trend of trends">{{ trend.snippet }}</a>
+      @for (trend of trends; track $index) {
+      <a>{{ trend.snippet }}</a>
+      }
     </div>
     <div class="major-trend">
       <a>{{ featureTrend.headline }}</a>

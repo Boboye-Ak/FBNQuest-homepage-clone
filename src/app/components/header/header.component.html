@@ -5,22 +5,22 @@
       <app-header-menu-item
         title="WHO WE SERVE"
         [menuItems]="[
-          { name: 'INDIVIDUALS', link: '',subMenu:[]  },
-          { name: 'INSTITUTIONS', link: '' ,subMenu:[] },
-          { name: 'BECOME A CLIENT', link: '',subMenu:[]  }
+          { name: 'INDIVIDUALS', link: '', subMenu: [] },
+          { name: 'INSTITUTIONS', link: '', subMenu: [] },
+          { name: 'BECOME A CLIENT', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
       <app-header-menu-item
         title="OUR SOLUTIONS"
         [menuItems]="[
-          { name: 'INVESTMENT MANAGEMENT', link: '',subMenu:[]  },
-          { name: 'CORPORATE AND INVESTMENT BANKING', link: '',subMenu:[]  },
-          { name: 'INSTITUTIONAL SECURITIES', link: '',subMenu:[]  }
+          { name: 'INVESTMENT MANAGEMENT', link: '', subMenu: [] },
+          { name: 'CORPORATE AND INVESTMENT BANKING', link: '', subMenu: [] },
+          { name: 'INSTITUTIONAL SECURITIES', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
     </ul>
     <ul class="right">
-      <li>SEARCH</li>
+      <li (click)="showSearchForm()">SEARCH</li>
       <li>CAREERS</li>
     </ul>
   </section>
@@ -29,48 +29,48 @@
       <app-header-menu-item
         title="About"
         [menuItems]="[
-          { name: 'Our Company', link: '' ,subMenu:[] },
-          { name: 'Milestones', link: '',subMenu:[]  },
-          { name: 'Governance', link: '',subMenu:[]  },
-          { name: 'Investor Relations', link: '',subMenu:[]  }
+          { name: 'Our Company', link: '', subMenu: [] },
+          { name: 'Milestones', link: '', subMenu: [] },
+          { name: 'Governance', link: '', subMenu: [] },
+          { name: 'Investor Relations', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
       <app-header-menu-item
         title="Businesses"
         [menuItems]="[
-          { name: 'FBNQuest Merchant Bank Group', link: '',subMenu:[]  },
-          { name: 'FBNQuest Capital Group', link: '' ,subMenu:[] },
-          { name: 'FBNQuest Trustees', link: '',subMenu:[]  }
+          { name: 'FBNQuest Merchant Bank Group', link: '', subMenu: [] },
+          { name: 'FBNQuest Capital Group', link: '', subMenu: [] },
+          { name: 'FBNQuest Trustees', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
       <app-header-menu-item
         title="Sustainability"
         [menuItems]="[
-          { name: 'Where we stand', link: '',subMenu:[]  },
-          { name: 'Committed to Stewardship', link: '' ,subMenu:[] },
-          { name: 'Citizenship Reports', link: '',subMenu:[]  }
+          { name: 'Where we stand', link: '', subMenu: [] },
+          { name: 'Committed to Stewardship', link: '', subMenu: [] },
+          { name: 'Citizenship Reports', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
       <app-header-menu-item
         title="Pressroom"
         [menuItems]="[
-          { name: 'News and Press Releases', link: '',subMenu:[]  },
-          { name: 'Lifestyle', link: '' ,subMenu:[] },
-          { name: 'Leading Conversations', link: '',subMenu:[]  },
-          { name: 'Impact Stories', link: '' ,subMenu:[] },
-          { name: 'Awards', link: '',subMenu:[]  }
+          { name: 'News and Press Releases', link: '', subMenu: [] },
+          { name: 'Lifestyle', link: '', subMenu: [] },
+          { name: 'Leading Conversations', link: '', subMenu: [] },
+          { name: 'Impact Stories', link: '', subMenu: [] },
+          { name: 'Awards', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
       <app-header-menu-item
         title="Quicklinks"
         [menuItems]="[
-          { name: 'Help & Support', link: '',subMenu:[]  },
-          { name: 'Tools & Calculators', link: '',subMenu:[]  },
-          { name: 'Office Locations', link: '',subMenu:[]  },
-          { name: 'FAQs', link: '',subMenu:[]  },
-          { name: 'Policies', link: '',subMenu:[]  },
-          { name: 'Ask the Experts', link: '',subMenu:[]  },
-          { name: 'NCCG Reports', link: '',subMenu:[]  }
+          { name: 'Help & Support', link: '', subMenu: [] },
+          { name: 'Tools & Calculators', link: '', subMenu: [] },
+          { name: 'Office Locations', link: '', subMenu: [] },
+          { name: 'FAQs', link: '', subMenu: [] },
+          { name: 'Policies', link: '', subMenu: [] },
+          { name: 'Ask the Experts', link: '', subMenu: [] },
+          { name: 'NCCG Reports', link: '', subMenu: [] }
         ]"
       ></app-header-menu-item>
     </ul>
@@ -107,5 +107,7 @@
       <img src="../../../assets/FBN-Quest.svg" />
     </div>
   </div>
-  <app-additional-menu *ngIf="showAdditionalMenu"></app-additional-menu>
+  @if(showAdditionalMenu){
+  <app-additional-menu></app-additional-menu>
+  }
 </header>

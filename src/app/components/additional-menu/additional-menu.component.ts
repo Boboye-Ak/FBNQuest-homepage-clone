@@ -18,10 +18,10 @@ import {
 })
 export class AdditionalMenuComponent implements OnInit {
   faTimes = faTimes;
-  faFacebook=faFacebook
-  faTwitter=faTwitter
-  faLinkedin=faLinkedin
-  faWhatsapp=faWhatsapp
+  faFacebook = faFacebook;
+  faTwitter = faTwitter;
+  faLinkedin = faLinkedin;
+  faWhatsapp = faWhatsapp;
   searchInput: string = '';
 
   constructor() {}

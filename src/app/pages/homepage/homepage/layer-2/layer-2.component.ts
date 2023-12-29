@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import Trend from '../../../../interfaces/Trend';
 
 @Component({
   selector: 'app-layer-2',
@@ -9,13 +10,13 @@ import { Component } from '@angular/core';
   styleUrl: './layer-2.component.css',
 })
 export class Layer2Component {
-  featureTrend = {
+  featureTrend: Trend = {
     headline: 'FBNQuest Entities Recognised at the Great Place to Work Awards.',
     snippet:
       'Lagos, Nigeria, November 2023- FBNQuest Merchant Bank, FBNQuest Asset Management, FBNQuest Trustees, and FBNQuest Capital were recently recognised at the',
     link: '',
   };
-  trends = [
+  trends: Trend[] = [
     {
       snippet:
         'FBNQuest Partners With Teach for Nigeria to Promote Educational Development in Nigeria',

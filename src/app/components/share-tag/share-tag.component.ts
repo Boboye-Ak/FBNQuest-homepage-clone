@@ -24,8 +24,8 @@ export class ShareTagComponent implements OnInit {
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
   faWhatsapp = faWhatsapp;
-  
-  icons=[faFacebook, faTwitter, faLinkedin, faWhatsapp]
+
+  icons = [faFacebook, faTwitter, faLinkedin, faWhatsapp];
 
   scrollDown() {
     window.scroll({

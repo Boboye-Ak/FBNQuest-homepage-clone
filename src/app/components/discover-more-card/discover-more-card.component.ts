@@ -19,6 +19,6 @@ export class DiscoverMoreCardComponent implements OnInit {
   }
   onMouseLeave() {
     this.isHovered = false;
-    console.log("not hovered")
+    console.log('not hovered');
   }
 }

@@ -1,11 +1,11 @@
 <section class="layer-6">
   <div class="layer-6-top">
     <ul class="icon-list">
-      <li class="icon"><fa-icon [icon]="faFacebook"></fa-icon></li>
-      <li class="icon"><fa-icon [icon]="faTwitter"></fa-icon></li>
-      <li class="icon"><fa-icon [icon]="faInstagram"></fa-icon></li>
-      <li class="icon"><fa-icon [icon]="faYoutube"></fa-icon></li>
-      <li class="icon"><fa-icon [icon]="faLinkedin"></fa-icon></li>
+      @for (icon of icons; track $index) {
+      <li class="icon">
+        <fa-icon [icon]="icon"></fa-icon>
+      </li>
+      }
     </ul>
   </div>
   <div class="layer-6-middle">

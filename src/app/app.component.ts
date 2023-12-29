@@ -5,6 +5,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomepageComponent } from './pages/homepage/homepage/homepage.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ShareTagComponent } from './components/share-tag/share-tag.component';
+import { SearchFormComponent } from './components/search-form/search-form-component.component';
+import { UiService } from '../app/services/ui.service';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +18,16 @@ import { ShareTagComponent } from './components/share-tag/share-tag.component';
     HomepageComponent,
     FontAwesomeModule,
     ShareTagComponent,
+    SearchFormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'fbnquest-homepage-clone';
+  title = 'FBNQuest - Merchant Banking & Asset Management';
+  isSearchFormShown$ = this.uiService.showSearchForm$;
+  constructor(private uiService: UiService) {}
+  hideSearchForm() {
+    this.uiService.toggleSearchFormOff();
+  }
 }

@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #c6ccd1;
+  background-color: #e0e5e7;
   color: #003b65;
   font-family: "Inter", sans-serif;
   font-size: 10px;
@@ -47,6 +47,7 @@
 
 .scroll-button-container .scroll-button {
   border: solid;
+  border-width: 1px;
   width: 48px;
   height: 48px;
   border-color: white;

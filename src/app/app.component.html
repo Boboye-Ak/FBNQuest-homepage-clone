@@ -1,3 +1,9 @@
+<head>
+  <title>{{ title }}</title>
+</head>
+@if(isSearchFormShown$| async){
+<app-search-form-component></app-search-form-component>
+}
 <app-header></app-header>
-<app-homepage></app-homepage>
+<app-homepage (click)="hideSearchForm()"></app-homepage>
 <app-share-tag></app-share-tag>

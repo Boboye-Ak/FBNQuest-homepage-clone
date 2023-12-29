@@ -25,11 +25,16 @@ export class HeaderComponent implements OnInit {
   faTimes = faTimes;
   constructor(private uiService: UiService) {}
   ngOnInit(): void {}
+
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
     this.isAtTop = window.scrollY > 0 ? false : true;
   }
   toggleShowAdditionalMenu() {
     this.showAdditionalMenu = !this.showAdditionalMenu;
+  }
+  showSearchForm() {
+    this.uiService.toggleSearchFormOn();
+    console.log('toggling on');
   }
 }
